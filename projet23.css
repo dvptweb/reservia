@@ -1,0 +1,82 @@
+section {
+    display: flex;
+   
+  }
+
+  img {
+	max-width: 100%;
+	height: auto;
+}
+
+
+section, article, footer, header
+ {
+    display: block;
+    max-width: 100%;
+    
+  }
+
+
+
+.marseille
+{
+background-color:#F2F2F2;
+border-radius: 50px;
+min-width: 66%;
+max-width: 500px;
+float: left;
+}
+
+.logements
+{
+display: block;
+font-size: 40px;
+flex-wrap: wrap;
+
+}
+
+.marseille h2
+
+{
+font-weight: bold;
+text-align: center;
+
+}
+
+
+.lien
+{
+    border:3px #d1c8c8 solid
+}
+
+.populaire
+{
+    background-color:#F2F2F2;
+    border-radius: 50px;
+    min-width: 30%;
+    max-width: 450px;
+    float: right;
+}
+
+.footer
+{
+    background-color:#F2F2F2
+
+}
+
+
+.section4
+{
+    min-width: 100%;
+    max-width: 100%;
+
+
+}
+
+/footer
+{
+    min-width: 100%;
+    max-width: 100%;
+
+
+}

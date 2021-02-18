@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="hebergement.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo"><img id="logo" src="logo.png" alt="" /></div>
+      <div class="onglets">
+        <div class="onglets_liste">Hébergements</div>
+        <div class="onglets_liste">Activités</div>
+        <div class="onglets_liste">S'inscrire</div>
+      </div>
+
+      <div class="titre">
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+      </div>
+
+      <div class="sous-titre">
+        <h2>En plein centre-ville ou en pleine nature</h2>
+      </div>
+      <div class="recherche">
+        <form method="post" action="#">
+          <input
+            type="text"
+            name="ville"
+            id="ville"
+            placeholder="Marseille, France"
+            size="30"
+            maxlength="10"
+          />
+        </form>
+      </div>
+      <div class="filtres">
+        <div class="filtres_liste">
+          <div class="filtre_liste_carte">Filtres</div>
+          <div class="filtres_liste_carte">Economique</div>
+          <div class="filtres_liste_carte">Familial</div>
+          <div class="filtres_liste_carte">Romantique</div>
+          <div class="filtres_liste_carte">Animaux autorisés</div>
+        </div>
+      </div>
+      <div class="info">
+        <h2>Plus de 500 logements sont disponibles dans cette ville</h2>
+      </div>
+    </div>
+
+    <div class="section1">
+      <div class="hebergement">
+        <h2>Hébergements à Marseille</h2>
+        <div class="hebergement_image">
+          <div class="hebergement_image_carte">carte1</div>
+          <div class="hebergement_image_carte">carte2</div>
+          <div class="hebergement_image_carte">carte3</div>
+          <div class="hebergement_image_carte">carte4</div>
+          <div class="hebergement_image_carte">carte5</div>
+          <div class="hebergement_image_carte">carte6</div>
+        </div>
+      </div>
+
+      <div class="populaires">
+        <h2>Les plus populaires</h2>
+        <div class="populaires_image">
+          <div class="populaires_image_carte">carte1</div>
+          <div class="populaires_image_carte">carte2</div>
+          <div class="populaires_image_carte">carte3</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section2">
+      <div class="activites">
+        <h2>Activités à Marseille</h2>
+        <div class="activites_image">
+          <div class="activites_image_carte">carte1</div>
+          <div class="activites_image_carte">carte2</div>
+          <div class="activites_image_carte">carte3</div>
+          <div class="activites_image_carte">carte4</div>
+          <div class="activites_image_carte">carte5</div>
+          <div class="activites_image_carte">carte6</div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer">
+        <div class="footer_texte">
+          <div class="footer_texte_carte">texte1</div>
+          <div class="footer_texte_carte">texte2</div>
+          <div class="footer_texte_carte">texte3</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

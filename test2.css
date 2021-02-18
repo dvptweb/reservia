@@ -1,0 +1,196 @@
+@font-face
+    {
+        font-family: "raleway";
+        src: url("raleway.ttf");
+    }  
+
+body {
+        font-family: "Raleway", sans-serif;
+        margin: auto;
+        display: block;
+       
+}
+
+
+
+#hebergements
+    {
+        background-color: #F2F2F2;
+        border-radius: 8%;
+        float: left;
+        min-width: 70%;
+        top: 10%;
+        
+    }
+
+#lesplus
+    {
+        
+        background-color: #F2F2F2;
+        border-radius: 8%;
+        float: right;
+        min-width: 30%;
+    }
+
+#activites
+
+    {
+        min-width: 100%;
+        max-width: 100%;
+        background-color:white ;
+    }
+
+footer
+    {
+        
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color:#F2F2F2 ;
+        bottom: 5%;
+    }
+
+
+
+
+
+
+
+
+.logements1{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 8%;
+    background-image: url("lacannebiere.jpg");
+    background-color: white;
+    border-radius: 8%;
+}
+
+
+.logements2{
+    background-repeat: no-repeat;
+    background-size: 8%;
+    background-position: center;
+    background-image: url("hotelduport.jpg");
+    background-color: white;
+    border-radius: 8%;
+}
+.logements3{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 8%;
+    background-image: url("hotellesmouettes.jpg");
+    background-color: white;
+    border-radius: 8%;
+}
+.logements4{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 8%;
+    background-image: url("hoteldelamer.jpg");
+    background-color: white;
+    border-radius: 8%;
+}
+.logements5{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 8%;
+    background-image: url("aubergelepanier.jpg");
+    background-color: white;
+    border-radius: 8%;
+}
+.logements6{
+
+    background-repeat: no-repeat;
+    background-size: 8%;
+    background-image: url("hotelchezamina.jpg");
+    background-position: center;
+    background-color: white;
+    border-radius: 8%;
+}
+
+
+
+
+
+.populaires1
+{
+
+    background-repeat: no-repeat;
+    background-size: 8%;
+    background-image: url("hotellesoleildumatin.jpg");
+    background-position: center;
+    background-color: white;
+    border-radius: 8%;
+    }
+
+.populaires2
+    {
+    
+            background-repeat: no-repeat;
+            background-size: 8%;
+            background-image: url("aucoeurdeleau.jpg");
+            background-position: center;
+            background-color: white;
+    border-radius: 8%;
+        }
+        
+.populaires3
+        {
+        
+                background-repeat: no-repeat;
+                background-size: 8%;
+                background-image: url("hoteltoutbleutoutblanc.jpg");
+                background-position: center;
+                background-color: white;
+    border-radius: 8%;
+            }
+
+
+.loisir1{
+
+            background-repeat: no-repeat;
+            background-size: 8%;
+            background-image: url("vieuxport.jpg");
+            background-position: center;
+            
+            }
+
+            
+
+.loisir2{
+
+                background-repeat: no-repeat;
+                background-size: 8%;
+                background-image: url("fortdepomegues.jpg");
+                background-position: center;
+            }
+.loisir3{
+
+                background-repeat: no-repeat;
+                background-size: 8%;
+                background-image: url("ilesdufrioul.jpg");
+                background-position: center;
+            }
+.loisir4{
+
+                background-repeat: no-repeat;
+                background-size: 8%;
+                background-image: url("calanques.jpg");
+                background-position: center;
+            }
+.loisir5{
+
+                background-repeat: no-repeat;
+                background-size: 8%;
+                background-image: url("notredamedelagarde.jpg");
+                background-position: center;
+            }
+            
+.loisir6{
+
+                background-repeat: no-repeat;
+                background-size: 8%;
+                background-image: url("parclongchamp.jpg");
+                background-position: center;
+            }
