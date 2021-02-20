@@ -1,0 +1,636 @@
+* {
+  outline: 2px red solid;
+}
+
+@font-face {
+  font-family: "raleway", sans-serif;
+  src: url("raleway.ttf") format("woff2"), url("raleway.ttf") format("woff");
+}
+
+@media (min-width: 200px) and (max-width: 959px) {
+  /*couvre des smartphones aux tablettes exclus*/
+
+  body {height: 100%;
+    width: 100%;
+    margin: auto;
+    font-family: "raleway", sans-serif;
+  }
+
+  #logo_image {
+    width: 120px;
+    height: auto;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
+
+  .onglets {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-width: 100%;
+  }
+
+  .section1 {
+    flex-direction: column-reverse;
+    display: flex;
+  }
+
+  .hebergement {
+    width: 100%;
+   
+  }
+
+  .hebergement_image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .hebergement_image_carte {
+    display: flex;
+    width: 220px;
+    min-height: 190px;
+    background-color: white;
+    border-radius: 15px;
+    margin-bottom: 1.5em;
+    justify-content: center;
+   
+  }
+
+  .populaires {
+   
+    background-color: greenyellow; /*#f2f2f2*/
+
+    width: 26%;
+    margin-bottom: 3%;
+    min-height: 580px;
+  }
+
+  .populaires_image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .populaires_image_carte {
+    width: 100%;
+    height: auto;
+    display: flex;
+    max-width: 100%;
+    background-color: white;
+    border-radius: 15px;
+    margin-bottom: 1.5em;
+  }
+
+  .activites {
+    max-width: 100%;
+    margin-bottom: 3%;
+    
+    width: 100%;
+  }
+
+  .activites_image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .activites_image_carte {
+    width: 200px; /* max-width: 300px;*/
+    height: 200px;
+    margin-bottom: 2rem;
+  }
+
+  .footer {
+    width: 100%;
+    height: auto;
+    background-color: greenyellow; /*#f2f2f2*/
+  }
+
+  .footer_texte {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: auto;
+
+    width: 100%;
+  }
+
+  .footer_texte_carte {
+    
+    text-align: left;
+    width: 100%;
+  }
+  .img_hebergement {
+    display: flex;
+    border-radius: 15px 15px 0px 0px;
+
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+  }
+
+  .img_populaires {
+    display: flex;
+    border-radius: 15px 0px 0px 15px;
+    margin-left: 13px; /*A VERIFIER*/
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+  }
+  .figure_hebergement {
+    font-size: smaller;
+    margin: 0em;
+    color: black;
+  }
+
+  .filtres_liste_carte1 {
+    height: 100%;
+  }
+
+  .filtres_liste_carte2 {
+    border-style: solid;
+    border-radius: 20px;
+    height: 100%;
+    border-color: black; /*#f2f2f2*/
+    border-width: 2px;
+  }
+
+  .figure_populaires {
+    display: flex;
+    margin: -0.3em; /*A VERIFIER*/
+    font-size: smaller;
+  }
+
+  .activites_image {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .img_activites14,
+  .img_activites2,
+  .img_activites3,
+  .img_activites56 {
+    display: flex;
+    border-radius: 15px 15px 0px 0px;
+    height: 150px;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .filtres {
+    min-width: 100%;
+  }
+  .populaires {
+    min-width: 100%;
+
+    background-color: greenyellow; /*#f2f2f2*/
+  }
+  .hebergement {
+    min-width: 100%;
+  }
+
+  .hebergement_image_carte {
+    min-width: 100%;
+  }
+
+  .populaires_image_carte {
+    width: 80%;
+  }
+
+  .activites_image_carte {
+    min-width: 100%;
+  }
+
+  .footer_texte {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .inscrire {
+    position: absolute;
+    margin-left: 80%;
+    margin-top: -6rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RETOUR AU PC*/
+
+@media (min-width: 960px) {
+ 
+
+  
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  #logo_image {
+    width: 100px;
+    height: auto;
+    margin-top: 2rem;
+  }
+
+  .onglets {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1%;
+    padding-top: 2rem;
+  }
+
+  .fa-map-marker-alt {
+    height: 100%;
+    width: auto;
+    background-color: #f2f2f2; 
+  }
+
+  .liste {
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+  }
+
+  .section1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    margin-right: 5%;    
+  
+                /*REPRENDRE SPACE BEETWEN*/
+  }
+
+  .section2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    margin-right: 5%;}
+    
+
+  .hebergement {
+    max-width: 60%;
+    padding: 2%;
+    background-color: #f2f2f2; 
+    border-radius: 15px;
+    
+    min-height: 580px;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+   margin-right: auto;
+  }
+
+  .hebergement_image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+
+  .hebergement_image_carte {
+    display: flex;
+    width: 280px;
+    min-height: 190px;
+    background-color: white;
+    border-radius: 15px;
+    margin-bottom: 1.5em;
+    justify-content: center;
+    padding: 1%;
+  }
+
+  .populaires {
+    padding: 2%;
+    background-color: #f2f2f2; 
+    border-radius: 15px;
+    width: 30%;
+    
+    min-height: 580px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .populaires_image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .populaires_image_carte {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    max-width: 100%;
+    background-color: white;
+    border-radius: 15px;
+    margin-bottom: 1.5em;
+    margin-right: 2em;
+  }
+
+  .activites {
+    max-width: 100%;
+    margin-bottom: 3%;
+   
+    width: 100%;
+  }
+
+  .activites_image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .activites_image_carte {
+    width: 200px; /* max-width: 300px;*/
+    height: 200px;
+    margin-bottom: 2rem;
+  }
+
+  .footer {
+    width: 100%;
+    height: auto;
+    background-color: #f2f2f2; 
+    
+  }
+
+  .footer_texte {
+    display: flex;
+    flex-wrap: wrap;
+    
+    height: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    
+  }
+
+  .footer_texte_carte {
+    padding-bottom: 2rem;
+    text-align: left;
+    width: 33.3333%;
+   
+  }
+
+  .filtres {
+    height: 40px;
+    margin-top: 2%;
+    margin-bottom: 2rem;
+  }
+
+  .filtres_liste {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  /*TESTd_section2*/
+
+  x
+
+/*TESTf_section2*/
+
+
+
+
+
+
+
+
+/*TESTd*/
+
+.titre {
+    padding-bottom: 1%;
+    padding-top: 1%;
+  }
+  /*TESTf*/
+
+  /* ICONES */
+  .fa-money-bill-wave,
+  .fa-child,
+  .fa-heart,
+  .fa-dog {
+    color: #0065fc;
+    background-color: #deebff; 
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+    margin-left: -2%;
+    margin-top: -1.5%;
+    margin-bottom: -1%;
+    padding-right: 1rem;
+    padding: 15px;
+  }
+
+  /* ICONES */
+
+  /*test_photos*/
+
+  .img_hebergement {
+    display: flex;
+    border-radius: 15px 15px 0px 0px;
+
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+  }
+
+  .img_populaires {
+    display: flex;
+    border-radius: 15px 0px 0px 15px;
+    margin-left: 13px; /*A VERIFIER*/
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+  }
+  .figure_hebergement {
+    font-size: smaller;
+    margin: 0em;
+    color: black;
+  }
+
+  .filtres_liste_carte1 {
+    height: 40px;
+    margin-right: 5rem;
+    justify-content: center;
+    font-size: 1.0em;
+    font-weight: bold;
+  }
+
+  .filtres_liste_carte2 {
+    border: 3px solid #f2f2f2; 
+    border-radius:40px;
+    margin-right: 3rem;
+    justify-content: center;
+    font-size: 1.0rem;
+    padding-right: 1rem;
+    font-weight: bold;
+  }
+
+  .figure_populaires {
+    display: flex;
+    margin: -0.3em; /*A VERIFIER*/
+    font-size: smaller;
+  }
+
+  .activites_image {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .colonne1 {
+    width: 23%;
+    
+  }
+
+  .colonne2 {
+    width: 23%;
+    
+    
+  }
+
+  .colonne3 {
+    width: 23%;
+  }
+
+  .colonne4 {
+    width: 23%;
+  }
+
+  .activites_image_carte1 {
+    height: auto;
+  }
+
+  .activites_image_carte2 {
+    
+    height: auto;
+  }
+
+  .activites_image_carte3 {
+    height: auto;
+    
+  }
+
+  .activites_image_carte4 {
+    height: auto;
+  }
+  .activites_image_carte5 {
+    
+    height: auto;
+  }
+
+  .activites_image_carte6 {
+    height: auto;
+  }
+
+  .img_activites14 {
+    display: flex;
+    border-radius: 15px 15px 0px 0px;
+    height: 353px;
+    object-fit: cover;
+    width: 100%;
+  }
+  .img_activites2 {
+    display: flex;
+    border-radius: 15px 15px 0px 0px;
+    height: 160px;
+    object-fit: cover;
+    width: 100%;
+  }
+  .img_activites3 {
+    display: flex;
+    border-radius: 15px 15px 0px 0px;
+
+    height: 130px;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .img_activites56 {
+    display: flex;
+    border-radius: 15px 15px 0px 0px;
+    height: 145px;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .figure_activites {
+    border-radius: 15px;
+    background-color: blanc; /* BLANC */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: ;
+  }
+
+  .fa-star {
+    color: blue;
+  }
+
+  /*TEXTE*/
+
+  h1 {
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  body {
+    font-family: "Raleway", sans-serif;
+    
+   
+  }
+
+  h2 {
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+
+  figcaption{
+    line-height: 20px;
+    
+  }
+
+
+
+
+
+  
+}
