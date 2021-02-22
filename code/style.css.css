@@ -1,6 +1,6 @@
-* {
+/* * {
   outline: 2px red solid;
-}
+} */
 
 @font-face {
   font-family: "raleway", sans-serif;
@@ -126,6 +126,7 @@
     border-radius: 15px;
     margin-bottom: 1.5em;
     justify-content: center;
+    box-shadow: 0px 2px 4px 0px #80808059;
   }
 
   .populaires {
@@ -146,6 +147,7 @@
     margin: 5px;
     font-size: smaller;
     width: 100%;
+   
   }
 
   .populaires_image {
@@ -153,13 +155,13 @@
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
+   
   }
 
   .populaires_image_carte {
-    min-width: 92%;
+    width: auto;
     display: flex;
-
+    box-shadow: 0px 2px 4px 0px #80808059;
     background-color: white;
     border-radius: 20px;
     margin-bottom: 1rem;
@@ -203,7 +205,7 @@
   }
 
   .hebergement_image_carte {
-    min-width: 92%;
+    width: auto;
     display: flex;
 
     background-color: white;
@@ -316,6 +318,12 @@
 /* RETOUR AU PC*/
 
 @media (min-width: 768px) {
+
+body{
+  height: 100%;
+  width: 100%;
+}
+
   .header {
     display: flex;
     flex-wrap: wrap;
@@ -390,7 +398,7 @@
 
   .hebergement {
     max-width: 68%;
-    padding: 20px;
+    padding: 2rem;
     background-color: #f2f2f2;
     border-radius: 15px;
 
@@ -413,26 +421,28 @@
     border-radius: 15px 15px 0px 0px;
 
     width: 100%;
-    height: 120px;
+    height: 110px;
     object-fit: cover;
   }
   .hebergement_image_carte {
     display: flex;
-    width: 30%;
+    width: 29%;
     min-height: 150px;
     background-color: white;
     border-radius: 15px;
     margin-bottom: 1.5em;
     justify-content: center;
     padding: 10px;
+    box-shadow: 0px 2px 4px 0px #80808059;
   }
   .figure_hebergement {
     font-size: smaller;
     margin: 0em;
+    
   }
 
   .populaires {
-    padding: 20px;
+    padding: 2rem;
     background-color: #f2f2f2;
     border-radius: 15px;
     width: 30%;
@@ -467,7 +477,8 @@
     max-width: 100%;
     background-color: white;
     border-radius: 15px;
-    margin-bottom: 1.5em;
+    margin-bottom: 2rem;
+    box-shadow: 0px 2px 4px 0px #80808059;
   }
 
   .figure_populaires {
@@ -475,14 +486,45 @@
     margin: 0;
     font-size: smaller;
     width: 100%;
+    
   }
 
   .section2 {
     display: flex;
-    flex-wrap: wrap;
+    
+    flex-direction: row;
     margin-left: 5%;
     margin-right: 5%;
   }
+  .colonne1 {
+    height: 100%;
+    width: 40%;
+  }
+  .colonne2 {
+    margin: 0px 2rem;
+    height: 100%;
+    width: 40%;
+  }
+  .colonne3 {
+    height: 100%;
+    width: 40%;
+  }
+  .colonne4 {
+    height: 100%;
+    width: 40%;
+    margin: 0 0 0 2rem;
+  }
+
+.activites_image_carte2{
+  margin-bottom: 2rem;
+}
+.activites_image_carte5{
+  margin-bottom: 2rem;
+}
+
+.section2 figcaption{
+  height: 3rem;
+}
 
   .activites {
     max-width: 100%;
@@ -493,61 +535,53 @@
 
   .activites_image {
     display: flex;
-   
+
     flex-direction: row;
   }
 
-  .colonne1,
-  .colonne2,
-  .colonne3,
-  .colonne4 {
-    
-   
-    
-  }
-
-
   .img_activites14 {
-    display: flex;
-    border-radius: 15px 15px 0px 0px;
-    height: 450px;
-    object-fit: cover;
     width: 100%;
+    border-radius: 15px 15px 0 0;
+    height: 26rem;
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
   }
   .img_activites2 {
-    display: flex;
-    border-radius: 15px 15px 0px 0px;
-    height: 160px;
-    object-fit: cover;
     width: 100%;
+    border-radius: 15px 15px 0 0;
+    height: 13em;
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
   }
   .img_activites3 {
-    display: flex;
-    border-radius: 15px 15px 0px 0px;
-
-    height: 130px;
-    object-fit: cover;
     width: 100%;
+    border-radius: 15px 15px 0 0;
+    height: 8rem;
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
   }
 
   .img_activites56 {
-    display: flex;
-    border-radius: 15px 15px 0px 0px;
-    height: 145px;
-    object-fit: cover;
     width: 100%;
+    border-radius: 15px 15px 0 0;
+    height: 10.5em;
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
   }
 
   .figure_activites {
     border-radius: 15px;
-    background-color: blanc; 
+    background-color: white;
     margin: 0;
     display: flex;
     flex-direction: column;
+    box-shadow: 0px 2px 4px 0px #80808059;
   }
 
-
- 
   .footer {
     width: 100%;
     height: auto;
