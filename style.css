@@ -1,6 +1,6 @@
-/* * {
+/** {
   outline: 2px red solid;
-} */
+}*/
 
 @font-face {
   font-family: "raleway", sans-serif;
@@ -16,11 +16,18 @@
     margin: auto;
     font-family: "raleway", sans-serif;
   }
-  a:link {
+  a {
     text-decoration: none;
+   
   }
-  
-  .onglets_liste a:hover {
+
+  .inscrire a {
+    color: #0065fc;
+    font-weight: bold;
+  }
+
+  .onglets_liste1 a:hover,
+  .onglets_liste2 a:hover {
     border-bottom: 2px solid;
     color: #0065fc;
     display: block;
@@ -29,23 +36,18 @@
     padding-bottom: 10px;
   }
 
-  
-  .fa-money-bill-wave,
-  .fa-child,
-  .fa-heart,
-  .fa-dog {
-    color: #0065fc;
-    background-color: #DEEBFF;
-    border-radius: 100%;
-    width: 15px;
-    height: 15px;
-    
-    padding: 15px;
+  .onglets_liste1 a:link,
+  .onglets_liste2 a:link {
+    border-bottom: 2px solid #f2f2f2;
+    color: black;
+    display: block;
+    border-spacing: 5px;
+
+    padding-bottom: 10px;
   }
-.inscrire a{
-  color:#0065fc;
-  font-weight: bold;
-}
+
+
+
   #logo_image {
     width: 120px;
     height: auto;
@@ -57,7 +59,6 @@
     position: absolute;
     margin-left: 70%;
     margin-top: -4rem;
-    
   }
   .onglets {
     display: flex;
@@ -70,8 +71,8 @@
     margin: 1rem;
   }
   h1 {
-    font-size: 1.3rem;
-    font-weight: 800;
+    font-size: 1.5rem;
+    font-weight: 700;
   }
 
   h2 {
@@ -84,25 +85,71 @@
     display: flex;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    border-bottom: 2px solid;
-    color: #deebff;
   }
 
   .onglets_liste {
-    width: 50%;
+    width: 100%;
     text-align: center;
-    
+    display: flex;
+  }
+  .onglets_liste1,
+  .onglets_liste2 {
+    width: 50%;
   }
 
-  .recherche {
-    margin-left: 1.3rem;
-    margin-right: 1.3rem;
-    margin-top: 2rem;
-    margin-bottom: 0rem;
+  form {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 3rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    max-width: 90%;
+    justify-content: center;
+  }
+  .srch {
+    display: flex;
+    width: auto;
+    
+  }
+  .fas.fa-map-marker-alt {
+    padding: 1rem;
+    border-radius: 0.75rem 0 0 0.75rem;
+    background-color: #f2f2f2;
+    width: 4%;
+    border: 1px solid #f2f2f2;
+    text-align: center;
+    max-height: 100%;
+  }
+  input {
+    border: 1px solid #f2f2f2;
+
+    font-size: 1rem;
+    border-radius: 0 1rem 1rem 0;
+    padding-left: 1rem;
+width: 70%;
+    background-color: white;
+    height: 100%;
+  }
+
+  .fas.fa-search {
+    padding: 1rem;
+    border-radius: 0.75rem 0.75rem 0.75rem 0.75rem;
+    background-color: #0065fc;
+    color: white;
+    cursor: pointer;
+    width: 4%;
+    border: 0px solid #0065fc;
+    max-height: 100%;
+    text-align: center;
+  }
+
+  button {
+    display: none;
   }
 
   .filtres_liste {
     margin-top: 2.4rem;
+
   }
 
   .filtres_liste_carte1 {
@@ -114,7 +161,7 @@
   .filtres_liste_carte2 {
     border-style: solid;
     border-radius: 30px;
-
+width: auto;
     border-color: #f2f2f2;
     border-width: 2px;
     margin-left: 1.2rem;
@@ -122,12 +169,31 @@
     margin-top: -0.2rem;
     margin-bottom: 0.8rem;
     font-size: 1.1rem;
+    display: flex;
+    flex-wrap: wrap;
     
-    display: inline-block;
-    padding-right: 10px;
+    
     align-items: center;
   }
 
+  .filtres_liste_carte2 h2 {
+    padding-left: 1rem;
+  }
+  
+  .fa-money-bill-wave,
+  .fa-child,
+  .fa-heart,
+  .fa-dog {
+    text-align: center;
+    border-radius: 100%;
+    color: #0368fc;
+    background-color: #dfecff;
+    padding: 13px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    margin-left: -3px;
+  }
   .info {
     margin-left: 1.2rem;
     margin-right: 1.2rem;
@@ -140,8 +206,6 @@
     flex-direction: column-reverse;
     display: flex;
   }
-
-
 
   .populaires {
     background-color: #f2f2f2;
@@ -200,16 +264,15 @@
     margin-bottom: 2rem;
   }
 
-
   .hebergement_image {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
   }
 
- 
   .hebergement_image_carte {
-    width: auto;
+    width: 100%;
     display: flex;
     padding: 5px;
     background-color: white;
@@ -226,16 +289,19 @@
     margin-bottom: 2rem;
   }
 
+  .hebergement a{
+width: 100%;
+
+  }
+
   .figure_hebergement {
     display: flex;
     margin: 0;
     font-size: smaller;
     width: 100%;
     flex-direction: column;
-    
   }
 
- 
   .img_hebergement {
     display: flex;
     border-radius: 15px 15px 0px 0px;
@@ -273,6 +339,10 @@
     font-size: smaller;
     width: 100%;
     flex-direction: column;
+  }
+
+  .activites a{
+width: 100%;
   }
 
   .activites_image_carte1,
@@ -327,14 +397,15 @@
     display: flex;
     flex-direction: column;
 
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     max-width: 100%;
+    line-height: 1.5rem;
   }
 
   .footer_texte_carte h2 {
-    font-weight: 800;
+    font-weight: 700;
     font-size: 1rem;
-    margin-bottom: 0rem;
+    margin-bottom: 0.5rem;
   }
 }
 
@@ -345,12 +416,18 @@
     height: 100%;
     width: 100%;
   }
-  a:link {
+
+  a {
     text-decoration: none;
+    color: black;
   }
 
+  .inscrire a {
+    color: #0065fc;
+    font-weight: bold;
+  }
   .onglets_liste a:hover {
-    border-top: 2px solid;
+    border-top: 20px solid;
     color: #0065fc;
   }
   .header {
@@ -361,37 +438,95 @@
     margin-right: 5%;
   }
 
-  #logo_image {
-    width: 100px;
-    height: auto;
-    margin-top: 2rem;
-  }
-
   .titre {
     padding-bottom: 1%;
     padding-top: 1%;
   }
+
+  form {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 3rem;
+  }
+  .srch {
+    display: flex;
+  }
+  .fas.fa-map-marker-alt {
+    padding: 11px;
+    border-radius: 0.75rem 0 0 0.75rem;
+    background-color: #f2f2f2;
+    width: 1.5rem;
+    border: 1px solid #f2f2f2;
+    text-align: center;
+    max-height: 100%;
+  }
+  input {
+    border: 1px solid #f2f2f2;
+
+    font-size: 1rem;
+
+    padding-left: 1rem;
+    display: flex;
+
+    background-color: white;
+    height: 100%;
+  }
+
+  .fas.fa-search {
+    display: none;
+  }
+
+  button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: auto;
+    border-radius: 0 0.75rem 0.75rem 0;
+    background-color: #0065fc;
+    color: white;
+    cursor: pointer;
+    width: 10rem;
+    border: 0px solid #0065fc;
+    height: 100%;
+    text-align: center;
+  }
+
   .onglets {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+
     margin-bottom: 1%;
-    padding-top: 2rem;
   }
-
-  .fa-map-marker-alt {
-    height: 100%;
-    width: auto;
-    background-color: #f2f2f2;
-  }
-
   .liste {
     display: flex;
-    width: 30%;
-    justify-content: space-between;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: flex-end;
+  }
+  #logo_image {
+    width: 10rem;
+    display: flex;
+  }
+
+  .onglets_liste {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .onglets_liste1 a,
+  .onglets_liste2 a {
+    padding-top: 26px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .inscrire a {
+    padding-left: 2rem;
   }
 
   .filtres {
-    height: 40px;
+    display: flex;
+
     margin-top: 2%;
     margin-bottom: 2rem;
   }
@@ -399,12 +534,14 @@
   .filtres_liste {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    
   }
 
   .filtres_liste_carte1 {
     height: 40px;
-    margin-right: 5rem;
-    justify-content: center;
+    margin-right: 3rem;
+
     font-size: 1em;
     font-weight: bold;
   }
@@ -413,16 +550,43 @@
     border: 3px solid #f2f2f2;
     border-radius: 40px;
     margin-right: 3rem;
+    height: 40px;
     justify-content: center;
     font-size: 1rem;
     padding-right: 1rem;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+   
   }
 
+  .filtres_liste_carte2 h2 {
+    padding-left: 1rem;
+  }
+
+  .fa-money-bill-wave,
+  .fa-child,
+  .fa-heart,
+  .fa-dog {
+    text-align: center;
+    border-radius: 100%;
+    color: #0368fc;
+    background-color: #dfecff;
+    padding: 13px;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-left: -3px;
+  }
+
+  .info {
+    display: flex;
+  }
   .section1 {
     display: flex;
     margin-left: 5%;
     margin-right: 5%;
+    height: 100%;
   }
 
   .hebergement {
@@ -430,12 +594,13 @@
     padding: 2rem;
     background-color: #f2f2f2;
     border-radius: 15px;
-
+height: 100%;
     min-height: 580px;
     display: flex;
     flex-grow: 1;
     flex-direction: column;
     margin-right: 4%;
+   
   }
 
   .hebergement_image {
@@ -443,6 +608,8 @@
     flex-wrap: wrap;
     justify-content: space-between;
     flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .img_hebergement {
@@ -456,27 +623,40 @@
   .hebergement_image_carte {
     display: flex;
     width: 29%;
-   height: auto;
+    height: auto;
     background-color: white;
     border-radius: 15px;
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
     justify-content: center;
     padding: 5px;
     box-shadow: 0px 2px 4px 0px #80808059;
-    
   }
+
+  .hebergement a {
+    width: 100%;
+  }
+
   .figure_hebergement {
     font-size: smaller;
-    margin: 0em;
-    
+    margin: 0;
+
+    width: 100%;
   }
 
+.populaires h1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
   .populaires {
-    padding: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
     background-color: #f2f2f2;
     border-radius: 15px;
-    width: 30%;
-
+    width: 40%;
+height: 100%;
     min-height: 580px;
     display: flex;
     flex-direction: column;
@@ -494,9 +674,10 @@
   .img_populaires {
     display: flex;
     border-radius: 15px 0px 0px 15px;
-
-    width: 130px;
-    height: 130px;
+    height: 10em;
+    max-width: 100%;
+    max-height: 100%;
+    width: 40%;
     object-fit: cover;
   }
 
@@ -511,6 +692,10 @@
     box-shadow: 0px 2px 4px 0px #80808059;
   }
 
+  .populaires a {
+    width: 100%;
+    height: 100%;
+  }
   .figure_populaires {
     display: flex;
     margin: 0;
@@ -518,6 +703,11 @@
     width: 100%;
   }
 
+  .populaires figcaption {
+    width: 50%;
+
+    margin-left: 20px;
+  }
   .section2 {
     display: flex;
 
@@ -562,6 +752,10 @@
     width: 100%;
   }
 
+  .activites h2{
+margin-left: 1rem;
+
+  }
   .activites_image {
     display: flex;
 
@@ -625,28 +819,15 @@
     padding-left: 5%;
     padding-right: 5%;
   }
+.footer h2{
+  margin-bottom:-1.5rem;
+}
 
   .footer_texte_carte {
     padding-bottom: 2rem;
     text-align: left;
     width: 33.3333%;
-  }
-
-  /* ICONES */
-  .fa-money-bill-wave,
-  .fa-child,
-  .fa-heart,
-  .fa-dog {
-    color: #0065fc;
-    background-color: #deebff;
-    border-radius: 100%;
-    width: 15px;
-    height: 15px;
-    margin-left: -2%;
-    margin-top: -1.5%;
-    margin-bottom: -1%;
-    padding-right: 1rem;
-    padding: 15px;
+    line-height: 2em;
   }
 
   .fa-star {

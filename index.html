@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Reservia</title>
   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-  <link rel="stylesheet" href="style.css.css" />
+  <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
 </head>
 
@@ -15,8 +15,10 @@
     <div class="onglets">
       <img id="logo_image" src="logo.png" alt="" />
       <div class="liste">
-        <div class="onglets_liste"><a href="#hebergementsancre">Hébergements</a></div>
-        <div class="onglets_liste"><a href="#activitesancre">Activités</a></div>
+        <div class="onglets_liste">
+          <div class="onglets_liste1"><a href="#hebergementsancre">Hébergements</a></div>
+          <div class="onglets_liste2"><a href="#activitesancre">Activités</a></div>
+        </div>
         <div class="inscrire"><a href="#">S'inscrire</a></div>
       </div>
     </div>
@@ -25,29 +27,31 @@
       <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
       <h2>En plein centre-ville ou en pleine nature</h2>
     </div>
-    <div class="recherche">
-      <form action="" method="post">
-        <i class="fas fa-map-marker-alt"></i>
-        <label for="POST-name"></label>
-        <input id="POST-name" type="text" name="name" placeholder="Marseille, France" />
-        <input type="submit" value="Rechercher" />
-      </form>
-    </div>
+
+    <form>
+      <i class="fas fa-map-marker-alt"></i>
+      <div class=srch>
+        <input type="search" id="maRecherche" name="q" placeholder="Marseille, France" size="25">
+        <button>Rechercher</button>
+      </div>
+      <i class="fas fa-search"></i>
+    </form>
+
     <div class="filtres">
       <div class="filtres_liste">
-        <div class="filtres_liste_carte1"> Filtres</div>
+        <div class="filtres_liste_carte1"> <h2>Filtres</h2></div>
 
         <div class="filtres_liste_carte2">
-          <i class="fas fa-money-bill-wave"></i> Economique
+          <i class="fas fa-money-bill-wave"></i> <h2>Economique</h2>
         </div>
         <div class="filtres_liste_carte2">
-          <i class="fas fa-child"></i> Familial
+          <i class="fas fa-child"></i> <h2>Familial</h2>
         </div>
         <div class="filtres_liste_carte2">
-          <i class="fas fa-heart"></i> Romantique
+          <i class="fas fa-heart"></i> <h2>Romantique</h2>
         </div>
         <div class="filtres_liste_carte2">
-          <i class="fas fa-dog"></i> Animaux autorisés
+          <i class="fas fa-dog"></i> <h2>Animaux autorisés</h2>
         </div>
       </div>
     </div>
@@ -64,7 +68,7 @@
         <div class="hebergement_image_carte">
           <a href="#">
             <figure class="figure_hebergement">
-              <img class="img_hebergement" src="lacannebiere.jpg" width="100%" height="auto" alt="">
+              <img class="img_hebergement" src="img\aubergedelacannebieresmall.jpg" width="100%" height="auto" alt="">
 
               <figcaption>
                 <h2>Auberge de la Cannebière</h2>Nuit à partir de 25 euros</br>
@@ -80,7 +84,7 @@
         <div class="hebergement_image_carte">
           <a href="#">
             <figure class="figure_hebergement">
-              <img class="img_hebergement" src="hotelduport.jpg" width="100%" height="auto" alt="">
+              <img class="img_hebergement" src="img\hotelduportsmall.jpg" width="100%" height="auto" alt="">
               <figcaption>
                 <h2>Hôtel du port</h2>Nuit à partir de 52 euros</br>
                 <i class="fas fa-star"></i>
@@ -95,7 +99,7 @@
         <div class="hebergement_image_carte">
           <a href="#">
             <figure class="figure_hebergement">
-              <img class="img_hebergement" src="hotellesmouettes.jpg" width="100%" height="auto" alt="">
+              <img class="img_hebergement" src="img\hotellesmouettessmall.jpg" width="100%" height="auto" alt="">
               <figcaption>
                 <h2>Hôtel Les Mouettes</h2>Nuit à partir de 76 euros</br>
                 <i class="fas fa-star"></i>
@@ -110,7 +114,7 @@
         <div class="hebergement_image_carte">
           <a href="#">
             <figure class="figure_hebergement">
-              <img class="img_hebergement" src="hoteldelamer.jpg" width="100%" height="auto" alt="">
+              <img class="img_hebergement" src="img\hoteldelamersmall.jpg" width="100%" height="auto" alt="">
               <figcaption>
                 <h2>Hôtel de la mer</h2>Nuit à partir de 46 euros</br>
                 <i class="fas fa-star"></i>
@@ -126,7 +130,7 @@
         <div class="hebergement_image_carte">
           <a href="#">
             <figure class="figure_hebergement">
-              <img class="img_hebergement" src="aubergelepanier.jpg" width="100%" height="auto" alt="">
+              <img class="img_hebergement" src="img\aubergelepaniersmall.jpg" width="100%" height="auto" alt="">
               <figcaption>
                 <h2>Auberge Le Panier</h2>Nuit à partir de 23 euros</br>
                 <i class="fas fa-star"></i>
@@ -141,7 +145,7 @@
         <div class="hebergement_image_carte">
           <a href="#">
             <figure class="figure_hebergement">
-              <img class="img_hebergement" src="hotelchezamina.jpg" width="100%" height="auto" alt="">
+              <img class="img_hebergement" src="img\hotelchezaminasmall.jpg" width="100%" height="auto" alt="">
               <figcaption>
                 <h2>Hôtel chez Amina</h2>Nuit à partir de 96 euros</br>
                 <i class="fas fa-star"></i>
@@ -163,7 +167,7 @@
         <div class="populaires_image_carte">
           <a href="#">
             <figure class="figure_populaires">
-              <img class="img_populaires" src="hotellesoleildumatin.jpg" width="100%" height="auto" alt="">
+              <img class="img_populaires" src="img\hotellesoleildumatinsmall.jpg" width="100%" height="auto" alt="">
               <figcaption>
                 <h2>Hôtel Le soleil du matin</h2>
                 </br>Nuit à partir de 128 euros</br>
@@ -179,7 +183,7 @@
         <div class="populaires_image_carte">
           <a href="#">
             <figure class="figure_populaires">
-              <img class="img_populaires" src="aucoeurdeleau.jpg" width="100%" height="auto" alt="">
+              <img class="img_populaires" src="img\aucoeurdeleausmall.jpg" width="100%" height="auto" alt="">
               <figcaption>
                 <h2>Au coeur de l'eau</br>Chambres d'hôtes</h2>
                 </br>Nuit à partir de 71 euros</br>
@@ -195,7 +199,7 @@
         <div class="populaires_image_carte">
           <a href="#">
             <figure class="figure_populaires">
-              <img class="img_populaires" src="hoteltoutbleutoutblanc.jpg" width="100%" height="auto" alt="">
+              <img class="img_populaires" src="img\hoteltoutbleutoutblancsmall.jpg" width="100%" height="auto" alt="">
               <figcaption>
                 <h2>Hôtel Tout bleu et tout blanc</h2>
                 </br>Nuit à partir de 68 euros</br>
@@ -221,7 +225,7 @@
           <div class="activites_image_carte1">
             <a href="#">
               <figure class="figure_activites">
-                <img class="img_activites14" src="vieuxport.jpg" width="100%" height="auto" alt="">
+                <img class="img_activites14" src="img\vieuxportsmall.jpg" width="100%" height="auto" alt="">
                 <figcaption>
                   <h2>Vieux Port</h2>
                 </figcaption>
@@ -233,7 +237,7 @@
           <div class="activites_image_carte2">
             <a href="#">
               <figure class="figure_activites">
-                <img class="img_activites2" src="fortdepomegues.jpg" width="100%" height="auto" alt="">
+                <img class="img_activites2" src="img\fortdepomeguessmall.jpg" width="100%" height="auto" alt="">
                 <figcaption>
                   <h2>Fort de Pomègues</h2>
                 </figcaption>
@@ -243,7 +247,7 @@
           <div class="activites_image_carte3">
             <a href="#">
               <figure class="figure_activites">
-                <img class="img_activites3" src="ilesdufrioul.jpg" width="100%" height="auto" alt="">
+                <img class="img_activites3" src="img\ilesdufrioulsmall.jpg" width="100%" height="auto" alt="">
                 <figcaption>
                   <h2>Iles du Frioul</h2>
                 </figcaption>
@@ -256,7 +260,7 @@
           <div class="activites_image_carte4">
             <a href="#">
               <figure class="figure_activites">
-                <img class="img_activites14" src="calanques.jpg" width="100%" height="auto" alt="">
+                <img class="img_activites14" src="img\calanquessmall.jpg" width="100%" height="auto" alt="">
                 <figcaption>
                   <h2>Parc National des Calanques</h2>
                 </figcaption>
@@ -269,7 +273,7 @@
           <div class="activites_image_carte5">
             <a href="#">
               <figure class="figure_activites">
-                <img class="img_activites56" src="notredamedelagarde.jpg" width="100%" height="auto" alt="">
+                <img class="img_activites56" src="img\notredamedelagardesmall.jpg" width="100%" height="auto" alt="">
                 <figcaption>
                   <h2>Notre-Dame-de-la-Garde</h2>
                 </figcaption>
@@ -279,7 +283,7 @@
           <div class="activites_image_carte6">
             <a href="#">
               <figure class="figure_activites">
-                <img class="img_activites56" src="parclongchamp.jpg" width="100%" height="auto" alt="">
+                <img class="img_activites56" src="img\parclongchampsmall.jpg" width="100%" height="auto" alt="">
                 <figcaption>
                   <h2>Parc Longchamp</h2>
                 </figcaption>
