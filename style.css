@@ -7,7 +7,7 @@
   src: url("raleway.ttf") format("woff2"), url("raleway.ttf") format("woff");
 }
 
-@media (min-width: 200px) and (max-width: 767px) {
+@media (min-width: 200px) and (max-width: 959px) {
   /*couvre des smartphones aux tablettes exclus*/
 
   body {
@@ -18,7 +18,7 @@
   }
   a {
     text-decoration: none;
-   
+    color: black;
   }
 
   .inscrire a {
@@ -45,8 +45,6 @@
 
     padding-bottom: 10px;
   }
-
-
 
   #logo_image {
     width: 120px;
@@ -109,7 +107,6 @@
   .srch {
     display: flex;
     width: auto;
-    
   }
   .fas.fa-map-marker-alt {
     padding: 1rem;
@@ -126,7 +123,7 @@
     font-size: 1rem;
     border-radius: 0 1rem 1rem 0;
     padding-left: 1rem;
-width: 70%;
+    width: 70%;
     background-color: white;
     height: 100%;
   }
@@ -148,20 +145,23 @@ width: 70%;
   }
 
   .filtres_liste {
-    margin-top: 2.4rem;
-
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .filtres_liste_carte1 {
     margin: 1.2rem;
     margin-top: 1rem;
     font-size: 1.1rem;
+    display: flex;
+    flex-grow: 1;
   }
 
   .filtres_liste_carte2 {
     border-style: solid;
     border-radius: 30px;
-width: auto;
+
     border-color: #f2f2f2;
     border-width: 2px;
     margin-left: 1.2rem;
@@ -170,16 +170,21 @@ width: auto;
     margin-bottom: 0.8rem;
     font-size: 1.1rem;
     display: flex;
-    flex-wrap: wrap;
-    
-    
+
     align-items: center;
   }
 
   .filtres_liste_carte2 h2 {
-    padding-left: 1rem;
+    padding-left: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    padding-right: 0.5rem;
   }
-  
+  .filtres_liste_carte1 h2 {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
   .fa-money-bill-wave,
   .fa-child,
   .fa-heart,
@@ -194,13 +199,31 @@ width: auto;
     display: flex;
     margin-left: -3px;
   }
+
+  .fas.fa-info {
+    text-align: center;
+    border-radius: 100%;
+    color: #0368fc;
+
+    border: 2px solid #f2f2f2;
+    font-size: 0.75em;
+    padding: 6px;
+    width: 10px;
+    height: 10px;
+  }
+  .info h2 {
+    margin: 0.4rem;
+  }
+
   .info {
     margin-left: 1.2rem;
     margin-right: 1.2rem;
-    margin-top: 0rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
     font-size: 1rem;
     font-weight: normal;
+    display: flex;
+    align-content: flex-start;
   }
   .section1 {
     flex-direction: column-reverse;
@@ -214,10 +237,12 @@ width: auto;
   }
 
   .populaires h1 {
+    display: flex;
     margin-left: 1.2rem;
     margin-right: 1.2rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    justify-content: space-between;
   }
 
   .figure_populaires {
@@ -256,9 +281,35 @@ width: auto;
 
   .populaires figcaption {
     width: 50%;
-
-    margin-left: 20px;
+    color: black;
+    margin-left: 1rem;
+    margin-top: 0.6rem;
+    line-height: 1rem;
+    display: flex;
+    flex-direction: column;
   }
+
+  .populaires h2 {
+    margin: 0;
+    font-weight: bold;
+    padding-bottom: 0.5rem;
+  }
+
+  .populaires h3 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 0.8rem;
+  }
+
+  .populaires_stars {
+    padding-top: 30%;
+    color: #0368fc;
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+  }
+
+ 
   .hebergement {
     min-width: 100%;
     margin-bottom: 2rem;
@@ -268,7 +319,6 @@ width: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
   }
 
   .hebergement_image_carte {
@@ -289,9 +339,8 @@ width: auto;
     margin-bottom: 2rem;
   }
 
-  .hebergement a{
-width: 100%;
-
+  .hebergement a {
+    width: 100%;
   }
 
   .figure_hebergement {
@@ -311,14 +360,42 @@ width: 100%;
     object-fit: cover;
   }
   .hebergement figcaption {
-    margin-left: 8px;
-    margin-bottom: 3px;
+    color: black;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    line-height: 1.2rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hebergement h2 {
+    margin: 0;
+    font-weight: bold;
   }
 
   .hebergement h3 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 0.8rem;
+  }
+
+  .hebergement_stars {
+    font-size: 0.7rem;
+    color: #0368fc;
+    display: flex;
+    align-items: center;
+  
+  }
+.gris{
+ color: #f2f2f2;
+
+}
+
+  .note {
     margin-left: 1.2rem;
     margin-right: 1.2rem;
     font-size: 1rem;
+    font-weight: bold;
   }
 
   .activites {
@@ -341,8 +418,8 @@ width: 100%;
     flex-direction: column;
   }
 
-  .activites a{
-width: 100%;
+  .activites a {
+    width: 100%;
   }
 
   .activites_image_carte1,
@@ -375,9 +452,13 @@ width: 100%;
 
   .activites figcaption {
     margin-left: 8px;
-    margin-bottom: 3px;
+   
   }
 
+  .activites h2 {
+    color: black;
+    font-weight: bold;
+  }
   .footer {
     max-width: 100%;
     height: auto;
@@ -405,13 +486,13 @@ width: 100%;
   .footer_texte_carte h2 {
     font-weight: 700;
     font-size: 1rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.8rem;
   }
 }
 
 /* RETOUR AU PC*/
 
-@media (min-width: 768px) {
+@media (min-width: 960px) {
   body {
     height: 100%;
     width: 100%;
@@ -535,7 +616,6 @@ width: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    
   }
 
   .filtres_liste_carte1 {
@@ -557,8 +637,11 @@ width: 100%;
     font-weight: bold;
     display: flex;
     align-items: center;
-   
   }
+
+.filtreslien{
+  background-color: red;
+}
 
   .filtres_liste_carte2 h2 {
     padding-left: 1rem;
@@ -578,9 +661,27 @@ width: 100%;
     display: inline-block;
     margin-left: -3px;
   }
+  .fas.fa-info {
+    text-align: center;
+    border-radius: 100%;
+    color: #0368fc;
 
+    border: 2px solid #f2f2f2;
+    font-size: 0.75em;
+    padding: 6px;
+    width: 10px;
+    height: 10px;
+  }
   .info {
     display: flex;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+  }
+
+
+  .info h2 {
+    margin: 0.4rem;
+    font-weight: normal;
   }
   .section1 {
     display: flex;
@@ -594,13 +695,12 @@ width: 100%;
     padding: 2rem;
     background-color: #f2f2f2;
     border-radius: 15px;
-height: 100%;
-    min-height: 580px;
+    
+    
     display: flex;
     flex-grow: 1;
     flex-direction: column;
-    margin-right: 4%;
-   
+    margin-right: 2%;
   }
 
   .hebergement_image {
@@ -617,7 +717,7 @@ height: 100%;
     border-radius: 15px 15px 0px 0px;
 
     width: 100%;
-    height: 110px;
+    height: 7rem;
     object-fit: cover;
   }
   .hebergement_image_carte {
@@ -626,14 +726,46 @@ height: 100%;
     height: auto;
     background-color: white;
     border-radius: 15px;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
     justify-content: center;
     padding: 5px;
     box-shadow: 0px 2px 4px 0px #80808059;
   }
 
+  .hebergement figcaption {
+    color: black;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+    line-height: 1.2rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hebergement h2 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+
+  .hebergement h3 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 0.8rem;
+  }
+
+  .hebergement_stars {
+    font-size: 0.7rem;
+    color: #0368fc;
+    display: flex;
+    
+  }
+  .gris{
+    color: #f2f2f2;
+   
+   }
   .hebergement a {
     width: 100%;
+   
   }
 
   .figure_hebergement {
@@ -642,12 +774,17 @@ height: 100%;
 
     width: 100%;
   }
-
-.populaires h1{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  .note {
+    
+    
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .populaires h1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
   .populaires {
     padding-left: 2rem;
@@ -656,8 +793,7 @@ height: 100%;
     background-color: #f2f2f2;
     border-radius: 15px;
     width: 40%;
-height: 100%;
-    min-height: 580px;
+    
     display: flex;
     flex-direction: column;
   }
@@ -703,10 +839,38 @@ height: 100%;
     width: 100%;
   }
 
-  .populaires figcaption {
-    width: 50%;
 
-    margin-left: 20px;
+
+  .populaires figcaption {
+    
+   
+    color: black;
+    margin-left: 1rem;
+    margin-top: 0.6rem;
+    line-height: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .populaires h2 {
+    margin: 0;
+    font-weight: bold;
+    padding-bottom: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .populaires h3 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 0.8rem;
+  }
+
+  .populaires_stars {
+    padding-top: 20%;
+    color: #0368fc;
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
   }
   .section2 {
     display: flex;
@@ -752,9 +916,8 @@ height: 100%;
     width: 100%;
   }
 
-  .activites h2{
-margin-left: 1rem;
-
+  .activites h2 {
+    margin-left: 1rem;
   }
   .activites_image {
     display: flex;
@@ -819,9 +982,9 @@ margin-left: 1rem;
     padding-left: 5%;
     padding-right: 5%;
   }
-.footer h2{
-  margin-bottom:-1.5rem;
-}
+  .footer h2 {
+    margin-bottom: -1.5rem;
+  }
 
   .footer_texte_carte {
     padding-bottom: 2rem;
@@ -858,3 +1021,5 @@ margin-left: 1rem;
     line-height: 20px;
   }
 }
+
+
