@@ -7,7 +7,7 @@
   src: url("raleway.ttf") format("woff2"), url("raleway.ttf") format("woff");
 }
 
-@media (min-width: 200px) and (max-width: 959px) {
+@media (max-width: 959px) {
   /*couvre des smartphones aux tablettes exclus*/
 
   body {
@@ -56,7 +56,7 @@
   .inscrire {
     position: absolute;
     margin-left: 70%;
-    margin-top: -4rem;
+    margin-top: -4.5rem;
   }
   .onglets {
     display: flex;
@@ -123,7 +123,7 @@
     font-size: 1rem;
     border-radius: 0 1rem 1rem 0;
     padding-left: 1rem;
-    width: 70%;
+    
     background-color: white;
     height: 100%;
   }
@@ -173,12 +173,16 @@
 
     align-items: center;
   }
+  .filtres_liste_carte2:hover {
+    box-shadow: 0px 2px 4px 0px #80808059;
 
+    cursor: pointer;
+  }
   .filtres_liste_carte2 h2 {
     padding-left: 0.5rem;
     font-size: 1rem;
     font-weight: bold;
-    padding-right: 0.5rem;
+    padding-right: 0.7rem;
   }
   .filtres_liste_carte1 h2 {
     font-size: 1rem;
@@ -302,14 +306,14 @@
   }
 
   .populaires_stars {
-    padding-top: 30%;
+    margin-top: 3rem;
     color: #0368fc;
     font-size: 0.7rem;
     display: flex;
     align-items: center;
+    height: 0.7rem;
   }
-
- 
+  
   .hebergement {
     min-width: 100%;
     margin-bottom: 2rem;
@@ -384,12 +388,16 @@
     color: #0368fc;
     display: flex;
     align-items: center;
-  
+    height: 1.3rem;
   }
-.gris{
- color: #f2f2f2;
-
-}
+  .gris {
+    font-size: 0.7rem;
+    color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    line-height: 1.3rem;
+  }
+ 
 
   .note {
     margin-left: 1.2rem;
@@ -452,7 +460,6 @@
 
   .activites figcaption {
     margin-left: 8px;
-   
   }
 
   .activites h2 {
@@ -498,6 +505,16 @@
     width: 100%;
   }
 
+  h1 {
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  body {
+    font-family: "Raleway", sans-serif;
+  }
+
   a {
     text-decoration: none;
     color: black;
@@ -522,6 +539,11 @@
   .titre {
     padding-bottom: 1%;
     padding-top: 1%;
+  }
+
+  .titre h2{
+    font-size: 1rem;
+    font-weight: normal;
   }
 
   form {
@@ -619,9 +641,8 @@
   }
 
   .filtres_liste_carte1 {
-    height: 40px;
     margin-right: 3rem;
-
+    margin-bottom: 1rem;
     font-size: 1em;
     font-weight: bold;
   }
@@ -629,8 +650,9 @@
   .filtres_liste_carte2 {
     border: 3px solid #f2f2f2;
     border-radius: 40px;
-    margin-right: 3rem;
+margin-bottom: 1rem;
     height: 40px;
+    margin-right: 2rem;
     justify-content: center;
     font-size: 1rem;
     padding-right: 1rem;
@@ -639,12 +661,14 @@
     align-items: center;
   }
 
-.filtreslien{
-  background-color: red;
-}
+  .filtres_liste_carte2:hover {
+    box-shadow: 0px 2px 4px 0px #80808059;
+    cursor: pointer;
+  }
 
   .filtres_liste_carte2 h2 {
     padding-left: 1rem;
+    font-size: 1.1rem;
   }
 
   .fa-money-bill-wave,
@@ -674,14 +698,15 @@
   }
   .info {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     margin-bottom: 2rem;
   }
-
 
   .info h2 {
     margin: 0.4rem;
     font-weight: normal;
+    font-size: 1rem;
+    
   }
   .section1 {
     display: flex;
@@ -695,8 +720,7 @@
     padding: 2rem;
     background-color: #f2f2f2;
     border-radius: 15px;
-    
-    
+
     display: flex;
     flex-grow: 1;
     flex-direction: column;
@@ -736,7 +760,7 @@
     color: black;
     margin-left: 0.5rem;
     margin-top: 0.5rem;
-    line-height: 1.2rem;
+    line-height: 1.3rem;
     display: flex;
     flex-direction: column;
   }
@@ -757,15 +781,18 @@
     font-size: 0.7rem;
     color: #0368fc;
     display: flex;
-    
+    align-items: center;
+    height: 1.3rem;
   }
-  .gris{
+  .gris {
+    font-size: 0.7rem;
     color: #f2f2f2;
-   
-   }
+    display: flex;
+    align-items: center;
+    line-height: 1.3rem;
+  }
   .hebergement a {
     width: 100%;
-   
   }
 
   .figure_hebergement {
@@ -775,8 +802,6 @@
     width: 100%;
   }
   .note {
-    
-    
     font-size: 1rem;
     font-weight: bold;
   }
@@ -792,8 +817,8 @@
     padding-top: 2rem;
     background-color: #f2f2f2;
     border-radius: 15px;
-    width: 40%;
-    
+    width: 30%;
+
     display: flex;
     flex-direction: column;
   }
@@ -810,7 +835,7 @@
   .img_populaires {
     display: flex;
     border-radius: 15px 0px 0px 15px;
-    height: 10em;
+    height: 9em;
     max-width: 100%;
     max-height: 100%;
     width: 40%;
@@ -839,24 +864,24 @@
     width: 100%;
   }
 
-
-
   .populaires figcaption {
-    
-   
     color: black;
     margin-left: 1rem;
     margin-top: 0.6rem;
     line-height: 1rem;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 0.5rem;
+    width: 50%;
   }
 
   .populaires h2 {
     margin: 0;
     font-weight: bold;
-    padding-bottom: 0.5rem;
+
     font-size: 0.9rem;
+    line-height: 1rem;
   }
 
   .populaires h3 {
@@ -866,12 +891,13 @@
   }
 
   .populaires_stars {
-    padding-top: 20%;
-    color: #0368fc;
     font-size: 0.7rem;
+    color: #0368fc;
     display: flex;
     align-items: center;
+    height: 1.3rem;
   }
+
   .section2 {
     display: flex;
 
@@ -918,6 +944,9 @@
 
   .activites h2 {
     margin-left: 1rem;
+
+    font-weight: bold;
+    font-size: 0.9rem;
   }
   .activites_image {
     display: flex;
@@ -984,6 +1013,7 @@
   }
   .footer h2 {
     margin-bottom: -1.5rem;
+    font-size: 1.1rem;
   }
 
   .footer_texte_carte {
@@ -991,35 +1021,9 @@
     text-align: left;
     width: 33.3333%;
     line-height: 2em;
-  }
-
-  .fa-star {
-    color: blue;
-  }
-
-  /* ICONES */
-
-  /*TEXTE*/
-
-  h1 {
-    color: black;
-    font-weight: bold;
-    font-size: 1.5rem;
-  }
-
-  body {
-    font-family: "Raleway", sans-serif;
-  }
-
-  h2 {
-    color: black;
-    font-weight: bold;
-    font-size: 1rem;
-  }
-
-  figcaption {
-    line-height: 20px;
+    font-size: 0.9rem;
   }
 }
+
 
 
