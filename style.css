@@ -36,8 +36,8 @@
     padding-bottom: 10px;
   }
 
-  .onglets_liste1 a:link,
-  .onglets_liste2 a:link {
+  .onglets_liste1 a,
+  .onglets_liste2 a{
     border-bottom: 2px solid #f2f2f2;
     color: black;
     display: block;
