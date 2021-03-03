@@ -105,14 +105,15 @@
     display: flex;
     flex-wrap: nowrap;
     height: 3rem;
-    margin-left: 5%;
-    margin-right: 5%;
-    max-width: 90%;
-    justify-content: center;
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+    
+   
   }
   .srch {
     display: flex;
     width: auto;
+    
   }
   .fas.fa-map-marker-alt {
     padding: 1rem;
@@ -125,13 +126,13 @@
   }
   input {
     border: 1px solid #f2f2f2;
-
+width: 16rem;
     font-size: 1rem;
-    border-radius: 0 1rem 1rem 0;
+    height: 3rem;
     padding-left: 1rem;
-
+    position: absolute;
     background-color: white;
-    height: 100%;
+   
   }
 
   .fas.fa-search {
@@ -144,6 +145,8 @@
     border: 0px solid #0065fc;
     max-height: 100%;
     text-align: center;
+    position: absolute;
+    left: 19rem;
   }
 
   button {
