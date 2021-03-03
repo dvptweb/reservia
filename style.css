@@ -107,13 +107,10 @@
     height: 3rem;
     margin-left: 1.2rem;
     margin-right: 1.2rem;
-    
-   
   }
   .srch {
     display: flex;
     width: auto;
-    
   }
   .fas.fa-map-marker-alt {
     padding: 1rem;
@@ -126,13 +123,12 @@
   }
   input {
     border: 1px solid #f2f2f2;
-width: 16rem;
+    width: 16rem;
     font-size: 1rem;
     height: 3rem;
     padding-left: 1rem;
     position: absolute;
     background-color: white;
-   
   }
 
   .fas.fa-search {
@@ -517,6 +513,7 @@ width: 16rem;
   body {
     height: 100%;
     width: 100%;
+    margin-top:0.15rem;
   }
 
   h1 {
@@ -754,7 +751,7 @@ width: 16rem;
     border-radius: 15px 15px 0px 0px;
 
     width: 100%;
-    height: 7rem;
+    height: 8rem;
     object-fit: cover;
   }
   .hebergement_image_carte {
@@ -763,7 +760,7 @@ width: 16rem;
     height: auto;
     background-color: white;
     border-radius: 15px;
-    margin-bottom: 2em;
+    margin-bottom: 2rem;
     justify-content: center;
     padding: 5px;
     box-shadow: 0px 2px 4px 0px #80808059;
@@ -778,7 +775,7 @@ width: 16rem;
     flex-direction: column;
   }
 
-  .hebergement h4{
+  .hebergement h4 {
     font-weight: bold;
     font-size: 1.5rem;
   }
@@ -836,7 +833,7 @@ width: 16rem;
     padding-top: 2rem;
     background-color: #f2f2f2;
     border-radius: 15px;
-    width: 30%;
+    width: 35%;
 
     display: flex;
     flex-direction: column;
@@ -854,13 +851,15 @@ width: 16rem;
   .img_populaires {
     display: flex;
     border-radius: 15px 0px 0px 15px;
-   
-    
-    height: 9rem;
+align-items: stretch;
+max-width: 100%;
+max-height: 100%;
     width: 40%;
+    height: 9rem;
     object-fit: cover;
   }
 
+  
   .populaires_image_carte {
     width: 100%;
     padding: 5px;
@@ -871,6 +870,8 @@ width: 16rem;
     margin-bottom: 2rem;
     box-shadow: 0px 2px 4px 0px #80808059;
     flex-grow: 1;
+    
+    
   }
 
   .populaires a {
@@ -892,7 +893,7 @@ width: 16rem;
     line-height: 1rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    line-height: 1.3rem;
     padding-bottom: 0.5rem;
     width: 50%;
   }
@@ -902,7 +903,6 @@ width: 16rem;
     font-weight: bold;
 
     font-size: 0.9rem;
-    line-height: 1rem;
   }
 
   .populaires h3 {
@@ -917,6 +917,7 @@ width: 16rem;
     display: flex;
     align-items: center;
     height: 1.3rem;
+    
   }
 
   .section2 {
