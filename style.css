@@ -73,6 +73,7 @@
 
   .titre {
     margin: 1rem;
+    margin-bottom: 2rem;
   }
   h1 {
     font-size: 1.5rem;
@@ -1042,26 +1043,30 @@ align-items: stretch;
     width: 100%;
     height: auto;
     background-color: #f2f2f2;
+    
   }
 
   .footer_texte {
     display: flex;
     flex-wrap: wrap;
-
+padding-top: 2.5rem;
     height: auto;
     padding-left: 5%;
     padding-right: 5%;
+    padding-bottom: 2.5rem;
+    
   }
   .footer h2 {
     margin-bottom: -1.5rem;
     font-size: 1.1rem;
+    margin-top: -0.2rem;
   }
 
   .footer_texte_carte {
-    padding-bottom: 2rem;
+    
     text-align: left;
     width: 33.3333%;
-    line-height: 2em;
+    line-height: 2.2em;
     font-size: 0.9rem;
   }
 }
