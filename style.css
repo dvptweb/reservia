@@ -520,7 +520,7 @@
   body {
     height: 100%;
     width: 100%;
-    margin-top:0.15rem;
+   
   }
 
   h1 {
@@ -541,10 +541,12 @@
   .inscrire a {
     color: #0065fc;
     font-weight: bold;
+    
   }
   .onglets_liste a:hover {
-    border-top: 20px solid;
+    border-top: 5px solid;
     color: #0065fc;
+    
   }
   header {
     display: flex;
@@ -639,9 +641,10 @@ font-weight: bold;
 
   .onglets_liste1 a,
   .onglets_liste2 a {
-    padding-top: 55px;
+    padding-top: 30px;
     padding-left: 3rem;
     padding-right: 3rem;
+    
   }
 
   .inscrire a {
