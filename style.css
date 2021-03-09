@@ -913,7 +913,7 @@ align-items: stretch;
     color: black;
     margin-left: 1rem;
     margin-top: 0.6rem;
-    
+    position:relative;
     display: flex;
     flex-direction: column;
     line-height: 1.3rem;
@@ -941,6 +941,9 @@ align-items: stretch;
     align-items: flex-end;
     height: 1.3rem;
       margin-top: 40px;
+     position: absolute;
+     top: 60px;
+      
   }
 
 
