@@ -940,9 +940,9 @@ align-items: stretch;
     display: flex;
     align-items: flex-end;
     height: 1.3rem;
-      margin-top: 40px;
+     
      position: absolute;
-     top: 60px;
+     top: 100px;
       
   }
 
