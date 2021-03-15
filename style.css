@@ -809,7 +809,7 @@ font-weight: bold;
   }
   .gris {
     font-size: 0.7rem;
-    color: rgb(217,217,217);
+    color:rgb(217,217,217);
     display: flex;
     align-items: center;
     line-height: 1.3rem;
